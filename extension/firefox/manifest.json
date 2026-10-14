@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Redalyc: exportar a RIS/BibTeX",
+  "version": "1.0.0",
+  "description": "Exporta los resultados de búsqueda de Redalyc a RIS, BibTeX o CSV, con resumen, palabras clave y DOI.",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "host_permissions": [
+    "https://www.redalyc.org/*",
+    "https://redalyc.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.redalyc.org/busquedaArticulo*",
+        "https://redalyc.org/busquedaArticulo*"
+      ],
+      "js": [
+        "exportador.js"
+      ],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "redalyc-export@juliovega.org",
+      "strict_min_version": "128.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  }
+}

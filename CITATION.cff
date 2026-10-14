@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Redalyc Exporter (Exportador Redalyc)"
+abstract: >-
+  Browser bookmarklet, extension and userscript that export the search results
+  of Redalyc (redalyc.org) to RIS, BibTeX or CSV, including title, authors,
+  journal, volume, issue, pages, ISSN, DOI, language, abstract and keywords,
+  together with a plain-text search log that supports reporting according to
+  PRISMA-S.
+authors:
+  - family-names: Vega-Cauich
+    given-names: Julio Isaac
+    orcid: "https://orcid.org/0000-0001-9190-3720"
+    affiliation: "Facultad de Educación, Universidad Autónoma de Yucatán"
+version: 1.0.0
+date-released: "2026-10-14"
+license: MIT
+url: "https://juliovega.org/exportador_redalyc.html"
+keywords:
+  - Redalyc
+  - systematic review
+  - evidence synthesis
+  - literature searching
+  - reference management
+  - RIS
+  - BibTeX
+  - bookmarklet
+  - PRISMA-S
